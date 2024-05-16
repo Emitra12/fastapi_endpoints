@@ -29,6 +29,7 @@ jobs:
           creds: ${{ secrets.AZURE_SECRET }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}  # Tenant ID
           client-id: ${{ secrets.AZURE_CLIENT_ID }}  # Client ID
+          client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}  # Client Secret
 
       - name: Deploy to Azure App Service
         uses: azure/webapps-deploy@v2
