@@ -27,6 +27,7 @@ jobs:
         uses: azure/login@v2
         with:
           creds: ${{ secrets.AZURE_SECRET }}
+          enable-AzPSSession: true
 
       - name: Deploy to Azure App Service
         uses: azure/webapps-deploy@v2
