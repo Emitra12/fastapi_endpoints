@@ -23,6 +23,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - shell: bash
+        env:
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+        run: |
+          echo "$AZURE_CLIENT_ID" && echo "$AZURE_CLIENT_SECRET" && echo "$AZURE_SUBSCRIPTION_ID" && echo "$AZURE_TENANT_ID"
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
