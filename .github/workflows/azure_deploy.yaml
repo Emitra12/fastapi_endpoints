@@ -26,7 +26,7 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          creds: 'ZVh8Q~LXgBcUlsxCfaddCwj1.LsL~P46rFKpGbOJ'
+        #  creds: 'ZVh8Q~LXgBcUlsxCfaddCwj1.LsL~P46rFKpGbOJ'
           tenant-id: '2cb097d2-ed57-460a-ae2c-ba224a15b396'  # Tenant ID
           client-id: '72acfff9-0b19-4e84-bccc-73a5d9a211b8'  # Client ID
           subscription-id: '5de68398-9ef5-41c1-8d56-56fe6ac9ea8b'
