@@ -40,5 +40,5 @@ jobs:
       - name: Deploy to Azure App Service
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'fastapi_endpoint_azure_app'  # Replace with your Azure App Service name
+          app-name: 'azure-deploy-endpoint'  # Replace with your Azure App Service name
           package: .
